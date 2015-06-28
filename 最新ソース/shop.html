@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>サイトのタイトル</title>
+<link rel="stylesheet" type="text/css" href="css/html5reset.css"  />
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+</script>
+<style type="text/css">
+#item{
+	width:50;
+}
+#kouka{
+	width:75;
+}
+#price{
+	width:75;
+}
+#qty{
+	width:50;
+}
+#sumprice{
+	width:50;
+}
+#purchase{
+	width:20;
+}
+.sample_02{
+width:100%;
+border-collapse: separate;
+border-spacing: 0px;
+border-top: 1px solid #ccc;
+border-left: 1px solid #ccc;
+}
+.sample_02 th{
+width: 25%;
+padding: 4px;
+text-align: left;
+vertical-align: top;
+color: #444;
+background-color: #ccc;
+border-top: 1px solid #fff;
+border-left: 1px solid #fff;
+border-right: 1px solid #ccc;
+border-bottom: 1px solid #ccc;
+}
+.sample_02 td{
+padding: 4px;
+background-color: #fafafa;
+border-right: 1px solid #ccc;
+border-bottom: 1px solid #ccc;
+}
+</style>
+</head>
+<body>
+<center>
+商品一覧
+<form action="#" method="post">
+<table>
+	<tbody class="sample_02">
+		<tr>
+			<td id="item">アイテム</td>
+			<td id="kouka">説明</td>
+			<td id="price">値段</td>
+			<td id="qty">購入個数</td>
+			<td id="sumprice">合計金額</td>
+			<td id="purchase">購入ボタン</td>
+		</tr>
+		<tr>
+			<td><img src="gameimg/hachimitsu.png"><br>蜂蜜蒸留酒</td>
+			<td>飲むとハチに刺されたかのような刺激がある。<br>舌に残る謎のザラツキは気にしないこと。</td>
+			<td>１０シル＄</td>
+			<td><input type="text">個</td>
+			<td><input type="text">シル＄</td>
+			<td><input type="radio">購入する</td>
+		</tr>
+		<tr>
+			<td><img src="gameimg/nodonuru.png"><br>プシュッとのどケア100ml</td>
+			<td>やわな喉を鍛え上げる。<br></td>
+			<td>３シル＄</td>
+			<td><input type="text">個</td>
+			<td><input type="text">シル＄</td>
+			<td><input type="radio">購入する</td>
+		</tr>
+		<tr>
+			<td><img src="gameimg/nuigurumi.png"><br>ふわもこシルドラ</td>
+			<td>シルドラのぬいぐるみ。<br>売り上げの何割かはシルドラ本人の懐に入っている。<br></td>
+			<td>５シル＄</td>
+			<td><input type="text">個</td>
+			<td><input type="text">シル＄</td>
+			<td><input type="radio">購入する</td>
+		</tr>
+	</tbody>
+</table>
+<input type="submit" value="購入">
+<form>
+<br>
+<br>
+<a href="index.html"><text style="color:black;">地図へ戻る</text></a>
+</center>
+</body>
+</html>

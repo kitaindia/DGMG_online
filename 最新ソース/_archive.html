@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<link rel="stylesheet" href="common.css" type="text/css" />
+<title>過去ログ - PHP掲示板</title>
+</head>
+<body>
+
+<h1>過去ログ</h1>
+
+<p>
+<a href="{$BBSPATH}">掲示板トップ</a> |
+<a href="{$BBSPATH_ARCHIVE}">過去ログ</a> |
+<a href="{$BBSPATH_RSS}">RSS</a>
+</p>
+
+<p>
+{$archive_anchors}
+</p>
+<hr />
+
+<BBSData>
+
+{$id}. <strong>{$subject}</strong> - {$mailto_name} - {$time} - [<a href="{$remove_anchor}">削除</a>]<br />
+
+<p>{$body_html}</p>
+{$file_link}
+
+<hr />
+</BBSData>
+
+<p>
+{$archive_anchors}
+</p>
+
+<hr />
+<p>
+<a href="{$BBSPATH}">掲示板トップ</a> |
+<a href="{$BBSPATH_ARCHIVE}">過去ログ</a> |
+<a href="{$BBSPATH_RSS}">RSS</a>
+</p>
+
+</body>
+</html>

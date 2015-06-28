@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="オンラインゲーム＜MazeMyth＞のギルド『シルドラ』のメンバー専用ページです。" />
+<meta name="keywords" content="MazeMyth,メイズミス,シルドラ" />
+<title>シルドラMember'sWebSite</title>
+<link rel="shortcut icon" href="image/favolite.ico">
+<link rel="stylesheet" type="text/css" href="css/html5reset.css"  />
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<style TYPE="text/css">
+.icon {
+　　　　　　border:none;
+　　　　　　outline:none;
+　　　　　 } 
+#mapimg {
+	z-index: 0;
+}
+</style>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-55630755-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<script type="text/javascript">
+<!--
+function cursorOutIcon(){
+	serihu.style.zIndex = -1;
+	hukidashi.style.zIndex = -1;
+}
+
+	var chat = "<text>チャットだよ。<br>初書き込みでシル＄ゲット！<br>ほかにも機能追加予定！</text>";
+	var account = "<text>アカウント登録できるよ。<br>ギルドメンバーの人はぜひ登録してね。</text>";
+	var bbs= "<text>掲示板だよ。<br>書き込んでね。</text>";
+	var syldra = "<text>「みんなで育てるシルドラくん」だよ。<br>もうすぐ卵から産まれそうだよ。</text>";
+	var rule = "<text>ギルドルールだよ。<br>よく読んでね。</text>";
+	var about = "<text>ギルドについて知りたいなら<br>ここを読んでね。</text>";
+	var members = "<text>メンバーのみんなを紹介してるよ。</text>";
+	var info = "<text>インフォメーションだよ<br>チェックしてね。</text>";
+	var gallery = "<text>準備中の共有ギャラリーだよ。<br>スクリーンショットの投稿はこちらで。<br>写真コンテストも開催するよ。</text>";
+	var mypage ="<text>自分やメンバーのオウチへ行けるよ。<br>でもまだ準備中なんだ。<br>ごめんね。</text>";
+	var shop ="<text>ショップだよ。アイテムが買えるんだ。<br>「ふわもこシルドラ」がオススメ！</text>";
+	var photo="<text>マスターギャラリーだよ。<br>ギルマス・サリサが画像などを<br>こっそり展示してるよ。</text>";
+	var sarisa="<text>ギルマス・サリサのページだよ。<br>「シルドラ」の方針についてや、ブログなどがあるよ。</text>";
+	var rensei="<text>ここはアイテムを練成できるよ<br>どんなアイテムが出来上がるかな。</text>";
+	var bbs2="<text>新しい掲示板だよ。<br>今は準備中なんだって。</text>";
+	var logout="<text>ログアウトするよ。</text>"
+
+function changeSerihu(serihu){
+	document.getElementById("serihu").innerHTML=serihu;
+	var serihu = document.getElementById('serihu');
+	var hukidashi = document.getElementById('hukidashi');
+	serihu.style.zIndex = 2;
+	hukidashi.style.zIndex = 1;
+}
+// -->
+</script>
+</head>
+<body>
+<form>
+<select name="kousin">
+<option value="a">---------更 新 履 歴---------</option>
+<option value="a">2014.11.06 / チャットにキーワードHITで１シル$ゲット機能追加のメンテナンス終了、公開再開。</option>
+<option value="a">2014.11.05 / チャットにキーワードHITでシル$ゲット機能追加。(訂正:メンテナンス中につき一時非公開)</option>
+<option value="a">2014.11.05 / リニューアルしたショップ（準備中）を公開。</option>
+<option value="a">2014.10.31 / 新しいチャット(機能付き)を公開。</option>
+<option value="a">2014.10.30 / 新しいチャット(準備中)を公開。</option>
+<option value="a">2014.10.27 / トップページを大幅にリニューアル。</option>
+<option value="a">2014.10.25 / トップページを設置。</option>
+<option value="a">2014.10.25 / フレーム非対応ユーザー向けにリンクアイコン設置。</option>
+<option value="a">2014.10.21 / ギルドルールを改訂。</option>
+<option value="a">2014.10.20 / 「シルドラくん」にシル$ゲット機能追加。</option>
+<option value="a">2014.10.19 / 「皆で育てるシルドラくん」設置。</option>
+<option value="a">2014.10.15 / ギャラリーをリニューアル</option>
+<option value="a">2014.10.14 / ファビコンを変更</option>
+<option value="a">2014.10.12 / アカウント登録機能を実装</option>
+<option value="a">2014.10.09 / トップページにハロウィンイラストを掲載</option>
+<option value="a">2014.10.04 / メニュー背景の変更ボタンを設置</option>
+<option value="a">2014.10.04 / 認証を一部のページに限定</option>
+<option value="a">2014.09.26 / チャット(ミニゲーム付き)を実装</option>
+<option value="a">2014.09.19 / インフォメーション更新</option>
+<option value="a">2014.09.19 / サイト開設</option>
+</select>
+</form>
+<center>
+<div style="position: relative;">
+<image src="image/worldmap.png" width="1536" height="762" id="mapimg" usemap="#WorldMap" border="0"/>
+<image src="image/hukidashi.png" width="400px" height="200px" id="hukidashi" style="position:absolute; top:19px; left:792px; z-index:1;"/>
+<div id="serihu" style="position:absolute; z-index:2; top:90px; left:865px;"><text>シルドラMember'sWebSiteへようこそ。<br>地図上のアイコンをクリックしてね。</text></div>
+</div>
+<map name="WorldMap">
+	<area onmouseover="changeSerihu(about);" onfocus="this.blur();" onmouseout="cursorOutIcon();"class="icon" shape="poly" coords="327,257,341,255,356,259,355,277,352,280,343,280,344,291,339,291,339,280,326,277" href="about.php">
+	<area onmouseover="changeSerihu(info)" onfocus="this.blur();" onmouseout="cursorOutIcon()"class="icon" shape="poly" coords="714,207,738,219,744,214,745,230,738,225,714,235,712,221" href="notice.php">
+	<area onmouseover="changeSerihu(gallery)" onfocus="this.blur();" onmouseout="cursorOutIcon()"class="icon" shape="poly" coords="417,491,437,472,450,486,437,508" href="#">
+	<area onmouseover="changeSerihu(rule)" onfocus="this.blur();" onmouseout="cursorOutIcon()"class="icon" shape="poly" coords="601,435,633,449,604,457,605,468,602,468,600,434" href="main.php">
+	<area onmouseover="changeSerihu(members)" onfocus="this.blur();" onmouseout="cursorOutIcon()"class="icon" shape="poly" coords="882,311,896,312,907,317,898,333,899,341,904,342,904,345,892,350,871,349,872,340,884,332,881,323,874,323,877,319,879,319,877,313," href="loginMembers.php">
+	<area onmouseover="changeSerihu(bbs)" onfocus="this.blur();" onmouseout="cursorOutIcon()"class="icon" shape="poly" coords="1037,352,1051,353,1055,355,1048,385,1039,385" href="loginBbs.php">
+	<area onmouseover="changeSerihu(chat)" onfocus="this.blur();" onmouseout="cursorOutIcon()"class="icon" shape="poly" coords="421,578,431,594,444,595,459,580,460,597,451,603,448,615,433,614,421,597" href="ChatDisp.php">
+	<area onmouseover="changeSerihu(account)" onfocus="this.blur();" onmouseout="cursorOutIcon()"class="icon" shape="poly" coords="836,456,849,457,848,471,857,480,855,485,847,486,851,496,828,497,829,495,831,492,832,488,828,478,824,479,826,477,826,474,822,469,821,461,824,464,830,464," href="confirm.php">
+	<area onmouseover="changeSerihu(syldra)" onfocus="this.blur();" onmouseout="cursorOutIcon()"class="icon" shape="poly" coords="749,560,803,566,804,576,808,576,812,582,811,590,806,595,779,595,773,589,773,581,776,577,777,574,781,574,782,568,790,560" href="bring_up_syldra.php">
+	<area onmouseover="changeSerihu(mypage)" onfocus="this.blur();" onmouseout="cursorOutIcon()"class="icon" shape="poly" coords="1157,481,1172,467,1183,484,1184,493,1164,498,1153,498,1150,489,1156,482" href="#">
+	<area onmouseover="changeSerihu(shop)" onfocus="this.blur();" onmouseout="cursorOutIcon()"class="icon" shape="poly" coords="945,547,957,551,975,551,975,561,977,561,978,585,969,581,942,580,943,551,944,551" href="SyldraShop.php">
+	<area onmouseover="changeSerihu(photo)" onfocus="this.blur();" onmouseout="cursorOutIcon()"class="icon" shape="poly" coords="239,346,245,341,242,328,254,334,262,328,279,341,267,353,272,358,266,362,262,358,254,365" href="loginGallery.php">
+	<area onmouseover="changeSerihu(sarisa)" onfocus="this.blur();" onmouseout="cursorOutIcon()"class="icon" shape="poly" coords="298,290,312,294,317,301,317,307,310,315,310,322,286,322,286,315,279,306,280,299,285,294" href="#">
+	<area onmouseover="changeSerihu(rensei)" onfocus="this.blur();" onmouseout="cursorOutIcon()"class="icon" shape="poly" coords="" href="695,469,710,468,710,464,714,464,713,469,716,471,716,479,721,490,716,469,716,502,689,501,689,495,684,489,693,476">
+	<area onmouseover="changeSerihu(bbs2)" onfocus="this.blur();" onmouseout="cursorOutIcon()"class="icon" shape="poly" coords="" href="#">
+	<area onmouseover="changeSerihu(logout)" onfocus="this.blur();" onmouseout="cursorOutIcon()"class="icon" shape="poly" coords="" href="#">
+	</map>
+</center>
+</body>
+</html>

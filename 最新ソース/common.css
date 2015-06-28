@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+/* 文字色、背景色 */
+body {
+color: #333;
+background-color: #e0ddff;
+}
+/* リンクの色 */
+a:link {
+    color: #009;
+}
+a:visited {
+    color: #909;
+}
+/* タイトル部分・文字サイズ */
+h1 {
+    font-size: 1em;
+}
+span.page-active {
+    font-weight: bold;
+}
+span.archive-active {
+    font-weight: bold;
+}
+.error {
+    color: green;
+}
+span.file-caption {
+    display: block;
+}
+span.file-info {
+    display: block;
+}

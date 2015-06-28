@@ -1,0 +1,527 @@
+@charset "UTF-8";
+
+/* //////////////////////////////////////////////////
+
+   NAME   : FR02_w
+   DATE   : 2009.05.31
+   AUTHOR : MONOCHROUMICON / NONL
+   URL    : http://monochroumicon.web.fc2.com/
+
+   ////////////////////////////////////////////////// */
+
+/* ==================================================
+   基本構造
+   ================================================== */
+* {
+	border: none;
+	font-size: 100%;
+	font-style: normal;
+	font-weight: normal;
+	margin: 0;
+	padding: 0;
+}
+html {
+	scrollbar-3dlight-color: #FFF;
+	scrollbar-arrow-color: #000;
+	scrollbar-darkshadow-color: #777;
+	scrollbar-face-color: #CCC;
+	scrollbar-highlight-color: #CCC;
+	scrollbar-shadow-color: #CCC;
+	scrollbar-track-color: #FFF;
+}
+body {
+	background: #FFF;
+	color: #777;
+	font: normal normal normal 12px/180% 'Bookman Old Style',serif;
+}
+/* ==================================================
+   段落
+   ================================================== */
+p {
+	margin: 0 50px 25px 50px;
+}
+/* ==================================================
+   見出し
+   ================================================== */
+h1 {
+	font: normal bold normal 66px/100% 'Bookman Old Style',serif;
+	color: #EEE;
+	text-align: right;
+	margin: 0 15px 0 0;
+}
+h2 {
+	color: #000;
+	font: normal bold normal 15px/180% 'Bookman Old Style',serif;
+	margin: 0 50px;
+}
+h3 {
+	background: url(image/h3.gif) no-repeat left center;
+	color: #000;
+	font-weight: bold;
+	margin: 0 50px;
+	padding: 1px 0 0 15px;
+}
+h4 {
+	color: #000;
+	font: normal bold normal 12px/180% 'Bookman Old Style',serif;
+	margin: 0 50px;
+}
+h5 {
+	color: #777;
+	font: normal bold normal 12px/180% 'Bookman Old Style',serif;
+	margin: 0 50px;
+}
+/* ==================================================
+   リンク
+   ================================================== */
+a {
+	text-decoration: none;
+}
+a:link {
+	color: #777;
+} 
+a:visited {
+	color: #CCC;
+} 
+a:hover {
+	color: #FFF;
+}
+a:active {
+	color: #FFF;
+}
+/* ==================================================
+   テキスト
+   ================================================== */
+em {
+	color: #000;
+	font-weight: normal;
+}
+strong {
+	color: #000;
+	font-weight: bold;
+}
+ins {
+	color : #000;
+}
+del {
+	color : #CCC;
+}
+big {
+	font-size: 14px;
+}
+small {
+	font-size: 10px;
+}
+/* ==================================================
+   ボックス
+   ================================================== */
+.BOX01 {
+	border-top: 1px #000 solid;
+	border-bottom: 1px #999 solid;
+	border-left: 1px #000 solid;
+	border-right: 1px #999 solid;
+	color: #777;
+	margin: 0 50px 25px 50px;
+	padding: 5px;
+}
+.BOX02 {
+	background: #000;
+	border-top: 1px #000 solid;
+	border-bottom: 1px #999 solid;
+	border-left: 1px #000 solid;
+	border-right: 1px #999 solid;
+	color: #FFF;
+	margin: 0 50px 25px 50px;
+	padding: 5px;
+}
+/* -------------------------
+   ボックス > 更新履歴
+   ------------------------- */
+.UPDATE {
+	font-size: 10px;
+	overflow: auto;
+	margin: 25px 0;
+	height: 6em;
+}
+
+#updatelist{
+color: white;
+    font-size: 10px;
+    font-weight: bold;
+    text-shadow: 2px 2px 1px black,
+    -2px 2px 1px black,
+    2px -2px 1px black,
+    -2px -2px 1px black;
+}
+/* ==================================================
+   フォーム
+   ================================================== */
+input,
+select,
+textarea {
+	background: transparent;
+	border-top: 1px #000 solid;
+	border-bottom: 1px #999 solid;
+	border-left: 1px #000 solid;
+	border-right: 1px #999 solid;
+	color: #777;
+	font: normal normal normal 11px/100% 'Bookman Old Style',serif;
+	margin: 5px 0 5px 0;
+	padding: 5px;
+	width: 350px;
+}
+input:hover,
+select:hover,
+textarea:hover {
+	border-top: 1px #999 solid;
+	border-bottom: 1px #000 solid;
+	border-left: 1px #999 solid;
+	border-right: 1px #000 solid;
+	color: #000;
+}
+input:focus,
+select:focus,
+textarea:focus {
+	background: #000;
+	border: 1px solid #000;
+	color: #FFF;
+}
+/* -------------------------
+   フォーム > 送信・リセット
+   ------------------------- */
+.BUTTON {
+	background: #000;
+	border: 1px solid #000;
+	color: #FFF;
+	width: 173px;
+}
+input:hover.BUTTON {
+	border: 1px solid #000;
+}
+/* -------------------------
+   フォーム > 一言メールフォーム
+   ------------------------- */
+#SINGLE input,
+#SINGLE select,
+#SINGLE textarea {
+	width: auto;
+}
+/* ==================================================
+   リスト
+   ================================================== */
+/* -------------------------
+   リスト > マーク付きリスト
+   ------------------------- */
+ul {
+	list-style: disc;
+	list-style-position: inside;
+	margin: 0 50px 25px 50px;
+}
+ol {
+	list-style-position: inside;
+	margin: 0 50px 25px 50px;
+}
+li {
+	color: #777;
+}
+/* -------------------------
+   リスト > 定義型リスト
+   ------------------------- */
+dl {
+	margin: 0 50px 25px 50px;
+}
+dt {
+	color: #000;
+	float: left;
+	line-height: 250%;
+}
+dd {
+	background: transparent url(image/line.gif) repeat-y left center;
+	line-height: 250%;
+	margin: 0 25px 0 150px;
+	padding: 0 0 0 2em;
+}
+/* -------------------------
+   リスト > バナーリンク
+   ------------------------- */
+.BANNERLINK {
+	margin: 0 50px 1em 50px;
+}
+.BANNERLINK dt {
+	float: left;
+	margin: 0 0.5em 0 0;
+}
+.BANNERLINK dd {
+	background: none;
+	line-height: 180%;
+}
+/* ==================================================
+   テーブル
+   ================================================== */
+table {
+	border-top: 1px #000 solid;
+	border-bottom: 1px #999 solid;
+	border-left: 1px #000 solid;
+	border-right: 1px #999 solid;
+	border-spacing: 5px;
+	margin: 0 50px 25px 50px;
+}
+th {
+	background: #000;
+	color: #FFF;
+	padding: 0.5em;
+}
+td {
+	background: transparent;
+	border-top: 1px #000 solid;
+	border-bottom: 1px #999 solid;
+	border-left: 1px #000 solid;
+	border-right: 1px #999 solid;
+	padding: 0.5em;
+}
+/* ==================================================
+   インデックス
+   ================================================== */
+/* -------------------------
+   インデックス > レイアウト
+   ------------------------- */
+#INDEX {
+	background: #FFF url(image/wallpaper2.png) repeat-y left top fixed;
+	font: normal normal normal 10px/100% 'Bookman Old Style',serif;
+	padding: 25px 25px 0 50px;
+}
+/* -------------------------
+   インデックス > 見出し
+   ------------------------- */
+#INDEX h1 {
+	color: #FFF;
+	font: normal bold normal 18px/100% 'Bookman Old Style',serif;
+	letter-spacing: 0.25em;
+	text-align: left;
+	margin: 0;
+}
+/* -------------------------
+   インデックス > 段落
+   ------------------------- */
+#INDEX p {
+	font: normal normal normal 10px/180% 'Bookman Old Style',serif;
+	margin: 25px 0;
+	width: 200px;
+}
+/* -------------------------
+   インデックス > リスト
+   ------------------------- */
+#INDEX ul {
+	color: #FFF;
+	font: normal normal normal 12px/180% 'Bookman Old Style',serif;
+	list-style: none;
+	margin: 0;
+}
+#INDEX ul a:link,
+#INDEX ul a:visited {
+	color: #FFF;
+}
+#INDEX ul a:hover,
+#INDEX ul a:active {
+	color: #222;
+}
+/* ==================================================
+   メニュー
+   ================================================== */
+/* -------------------------
+   メニュー > レイアウト
+   ------------------------- */
+#MENU {
+	background: url(image/wallpaper2.png) repeat-y right top fixed;
+	padding: 25px 25px 0 50px;
+}
+/* -------------------------
+   メニュー > 見出し
+   ------------------------- */
+#MENU h1 {
+	color: #FFF;
+	font: normal bold normal 18px/100% 'Bookman Old Style',serif;
+	letter-spacing: 0.25em;
+	text-align: left;
+	margin: 0;
+}
+/* -------------------------
+   メニュー > リスト
+   ------------------------- */
+#MENU ul {
+	color: #FFF;
+	list-style: none;
+	margin: 0;
+}
+#MENU li {
+	margin: 0 0 5px 0;
+}
+#MENU ul a:link,
+#MENU ul a:visited {
+	color: #FFF;
+}
+#MENU ul a:hover,
+#MENU ul a:active {
+	color: #222;
+}
+/* ==================================================
+   レイアウト
+   ================================================== */
+/* -------------------------
+   レイアウト > コンテナ
+   ------------------------- */
+#CONTAINER {
+	padding: 10px 0;
+}
+/* -------------------------
+   レイアウト > フッター
+   ------------------------- */
+#FOOTER {
+	background: #EEE;
+	font: normal normal normal 10px/180% 'Bookman Old Style',serif;
+	text-align: center;
+	margin: 50px 50px 0 50px;
+	padding: 0.5em;
+}
+/* -------------------------
+   レイアウト > ページトップ
+   ------------------------- */
+.PAGETOP {
+	font: normal normal normal 10px/180% 'Bookman Old Style',serif;
+	letter-spacing: 0.25em;
+	list-style: none;
+	text-align: right;
+	margin: 50px 0;
+}
+.PAGETOP li {
+	display: inline;
+	list-style: none;
+}
+.PAGETOP a,
+.PAGETOP a:visited {
+	background: url(image/pagetop.gif) no-repeat right center;
+	color: #FFF;
+	font-weight: bold;
+	padding: 15px 15px 15px 150px;
+}
+.PAGETOP a:hover {
+	color: #222;
+}
+/* ==================================================
+   著作権表示
+   ================================================== */
+#COPYRIGHT { color: #222; font-size: 9px; }
+#COPYRIGHT a,
+#COPYRIGHT a:visited,
+#COPYRIGHT a:active,
+#COPYRIGHT a:hover { font-size: 9px; color: #222; }
+
+.login {text-align: center;
+	
+}
+
+.menutext {
+	{
+color: white;
+    font-size: 14px;
+    font-weight: bold;
+    text-shadow: 2px 2px 1px black,
+    -2px 2px 1px black,
+    2px -2px 1px black,
+    -2px -2px 1px black;
+}
+}
+◆CSS
+/* .slideShow
+------------------------- */
+.slideShow {
+	margin: 0 auto;
+	text-align: left;
+	display: none;
+}
+
+/* .mainView
+------------------------- */
+.slideShow .mainView {
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+}
+.slideShow .mainView ul {
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+}
+.slideShow .mainView ul li {
+	top: 0;
+	left: 0;
+	width: 100%;
+	position: absolute;
+}
+.slideShow .mainView ul li img {
+	width: 100%;
+}
+
+/* .thumbNail
+------------------------- */
+.slideShow .thumbNail {
+	width: 100%;
+	overflow: hidden;
+}
+
+.slideShow .thumbNail ul {
+	width: 110%;
+}
+
+.slideShow .thumbNail ul li {
+	float: left;
+	display: inline;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.slideShow .thumbNail ul li img {
+	width: 100%;
+}
+
+.slideShow .thumbNail ul li.active {
+	filter: alpha(opacity=100)!important;
+	-moz-opacity: 1!important;
+	opacity: 1!important;
+}
+
+/* sideNavi
+------------------------- */
+.slideShow .mainView .btnPrev,
+.slideShow .mainView .btnNext {
+	top: 0;
+	width: 5%;
+	height: 100%;
+	position: absolute;
+	z-index: 100;
+}
+.slideShow .mainView .btnPrev {
+	left: 0;
+	background: #ccc url(../img/btnPrev.png) no-repeat center center;
+}
+.slideShow .mainView .btnNext {
+	right: 0;
+	background: #ccc url(../img/btnNext.png) no-repeat center center;
+}
+
+
+/* =======================================
+	ClearFixElements
+======================================= */
+.slideShow ul:after {
+	content: ".";
+	height: 0;
+	clear: both;
+	display: block;
+	visibility: hidden;
+}
+
+.slideShow ul {
+	display: inline-block;
+	overflow: hidden;
+}
